@@ -13,6 +13,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contact.php">Contact</a>
                 </li>
+                <?php if(isset($_SESSION['LOGGED_USER'])) : ?> 
+                    <li class="nav-item">
+                        <a href="logout.php" class="nav-link">Deconnexion</a>
+                    </li>
+                <?php endif; ?>
             </ul>
         </div>
     </div>
